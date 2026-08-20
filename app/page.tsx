@@ -24,6 +24,28 @@ export default function CulturaBrasileira() {
           </div>
         </div>
       </section>
+      {/* Seção de Culinária */}
+      <section className="bg-yellow-50 py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-yellow-800 mb-10 text-center">Sabores Inconfundíveis</h2>
+          <div className="space-y-8">
+            <div className="flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-xl shadow-sm">
+              <div className="w-full md:w-1/3 bg-orange-200 h-48 rounded-lg flex items-center justify-center text-orange-800 font-bold">Feijoada</div>
+              <div className="w-full md:w-2/3">
+                <h3 className="text-2xl font-bold mb-2">A Tradicional Feijoada</h3>
+                <p className="text-gray-700">O prato nacional do Brasil. Uma mistura rica de feijão preto e carnes de porco, tradicionalmente servida com arroz, farofa, couve e laranja.</p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row-reverse items-center gap-6 bg-white p-6 rounded-xl shadow-sm">
+              <div className="w-full md:w-1/3 bg-yellow-200 h-48 rounded-lg flex items-center justify-center text-yellow-800 font-bold">Pão de Queijo</div>
+              <div className="w-full md:w-2/3 text-right">
+                <h3 className="text-2xl font-bold mb-2">O Orgulho Mineiro</h3>
+                <p className="text-gray-700">Pequenos pães assados de queijo e polvilho doce/azedo. Crocantes por fora, macios por dentro, perfeitos com um café coado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
