@@ -1,9 +1,32 @@
 export default function CulturaBrasileira() {
   return (
-    <main className="min-h-screen bg-zinc-50 text-zinc-900 font-sans flex flex-col">
-      <header className="bg-gradient-to-r from-green-600 to-yellow-500 text-white py-32 px-6 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">A Alma da Cultura Brasileira</h1>
-        <p className="text-xl md:text-2xl max-w-2xl mx-auto drop-shadow">Um mergulho profundo na diversidade, nas cores, nos ritmos e nos sabores do Brasil.</p>
+    <main className="min-h-screen bg-slate-50 text-zinc-900 font-sans flex flex-col">
+      
+      {/* Hero Section */}
+      <header className="relative py-40 px-6 text-center flex flex-col items-center justify-center overflow-hidden min-h-[80vh]">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=2000&auto=format&fit=crop" 
+            alt="Paisagem Brasileira" 
+            className="object-cover w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-green-900/80 via-black/60 to-black/80"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <span className="inline-block py-1 px-3 rounded-full bg-yellow-500 text-yellow-950 font-bold text-sm tracking-widest uppercase mb-6">
+            Descubra o Brasil
+          </span>
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white tracking-tight">
+            A Alma da Cultura <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-400">Brasileira</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-200 mb-10 font-light">
+            Um mergulho profundo na diversidade, nas cores, nos ritmos e nos sabores vibrantes do nosso país.
+          </p>
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full transition-colors text-lg shadow-lg shadow-green-500/30">
+            Comece a Explorar
+          </button>
+        </div>
       </header>
 
       <section className="py-20 px-6 max-w-5xl mx-auto flex-grow">
