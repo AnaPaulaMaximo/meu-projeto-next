@@ -24,6 +24,7 @@ export default function CulturaBrasileira() {
           </div>
         </div>
       </section>
+      
       {/* Seção de Culinária */}
       <section className="bg-yellow-50 py-20 px-6">
         <div className="max-w-5xl mx-auto">
@@ -45,6 +46,17 @@ export default function CulturaBrasileira() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Seção de Festas */}
+      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-blue-700 mb-6">Um Povo que Celebra</h2>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+          A cultura brasileira é marcada por sua alegria e capacidade de celebração. O <strong>Carnaval</strong> paralisa o país em fevereiro, com desfiles de escolas de samba grandiosos no Sudeste e os trios elétricos arrastando multidões no Nordeste.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Em junho, o país se veste de xadrez para as <strong>Festas Juninas</strong>. Em homenagem a santos populares, o povo se reúne em volta da fogueira para dançar quadrilha, beber quentão e celebrar a vida no campo, mostrando que o Brasil é muito mais que apenas praia e carnaval.
+        </p>
       </section>
     </main>
   );
