@@ -29,20 +29,36 @@ export default function CulturaBrasileira() {
         </div>
       </header>
 
-      <section className="py-20 px-6 max-w-5xl mx-auto flex-grow">
-        <h2 className="text-3xl font-bold text-green-700 mb-8 text-center">Nossos Ritmos</h2>
+      {/* Seção de Música */}
+      <section className="py-24 px-6 max-w-6xl mx-auto flex-grow">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-extrabold text-zinc-900 tracking-tight">Nossos Ritmos</h2>
+          <div className="w-24 h-1 bg-green-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+        
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-bold mb-3">Samba</h3>
-            <p>O coração do carnaval e a expressão mais famosa da identidade musical brasileira.</p>
+          {/* Card Samba */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 w-full h-1 bg-yellow-400"></div>
+            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🥁</div>
+            <h3 className="text-2xl font-bold mb-3 text-zinc-800">Samba</h3>
+            <p className="text-gray-600 leading-relaxed">O coração do carnaval e a expressão mais famosa da identidade musical brasileira, com raízes profundas na África.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-bold mb-3">Bossa Nova</h3>
-            <p>A fusão elegante do samba com o jazz que levou a música brasileira para o mundo.</p>
+          
+          {/* Card Bossa Nova */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 w-full h-1 bg-blue-500"></div>
+            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🎸</div>
+            <h3 className="text-2xl font-bold mb-3 text-zinc-800">Bossa Nova</h3>
+            <p className="text-gray-600 leading-relaxed">A fusão elegante do samba com o jazz. Poética e suave, levou a música brasileira para os ouvidos de todo o mundo.</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-500 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-bold mb-3">Forró</h3>
-            <p>O ritmo contagiante do Nordeste, embalado pela sanfona, zabumba e triângulo.</p>
+          
+          {/* Card Forró */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 w-full h-1 bg-green-500"></div>
+            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🪗</div>
+            <h3 className="text-2xl font-bold mb-3 text-zinc-800">Forró</h3>
+            <p className="text-gray-600 leading-relaxed">O ritmo contagiante do Nordeste, embalado pela sanfona, zabumba e triângulo. Sinônimo de festa e dança colada.</p>
           </div>
         </div>
       </section>
