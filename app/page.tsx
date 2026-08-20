@@ -24,24 +24,44 @@ export default function CulturaBrasileira() {
         </div>
       </section>
 
-      <section className="bg-yellow-50 py-20 px-6">
+      {/* Seção de Culinária */}
+      <section className="bg-yellow-50 py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-yellow-800 mb-10 text-center">Sabores Inconfundíveis</h2>
-          <div className="space-y-8">
-            <div className="flex flex-col md:flex-row items-center gap-6 bg-white p-6 rounded-xl shadow-sm">
-              <div className="w-full md:w-1/3 bg-zinc-200 h-48 rounded-lg flex items-center justify-center text-zinc-500">Imagem: Feijoada</div>
-              <div className="w-full md:w-2/3">
-                <h3 className="text-2xl font-bold mb-2">A Tradicional Feijoada</h3>
-                <p className="text-gray-700">Uma mistura rica de feijão preto e carnes, servida com arroz, farofa e laranja.</p>
+          <h2 className="text-4xl font-extrabold text-yellow-900 mb-12 text-center tracking-tight">Sabores Inconfundíveis</h2>
+          <div className="space-y-12">
+            
+            {/* Feijoada */}
+            <div className="flex flex-col md:flex-row items-center gap-8 bg-white p-6 rounded-2xl shadow-lg border border-yellow-100">
+              <div className="w-full md:w-2/5 h-64 overflow-hidden rounded-xl relative">
+                <img 
+                  src="/img/feijoada.webp"
+                  alt="Feijoada Brasileira"
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="w-full md:w-3/5">
+                <span className="text-sm font-bold uppercase tracking-wider text-orange-600 mb-2 block">Prato Principal</span>
+                <h3 className="text-3xl font-bold mb-3 text-zinc-800">A Tradicional Feijoada</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">Uma mistura rica de feijão preto e carnes, cozida lentamente. Tradicionalmente servida com arroz branco, farofa crocante, couve refogada e fatias de laranja.</p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row-reverse items-center gap-6 bg-white p-6 rounded-xl shadow-sm">
-              <div className="w-full md:w-1/3 bg-zinc-200 h-48 rounded-lg flex items-center justify-center text-zinc-500">Imagem: Pão de Queijo</div>
-              <div className="w-full md:w-2/3 text-right">
-                <h3 className="text-2xl font-bold mb-2">O Orgulho Mineiro</h3>
-                <p className="text-gray-700">Pequenos pães assados de queijo e polvilho. Perfeitos com um café coado.</p>
+
+            {/* Pão de Queijo */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 bg-white p-6 rounded-2xl shadow-lg border border-yellow-100">
+              <div className="w-full md:w-2/5 h-64 overflow-hidden rounded-xl relative">
+                <img 
+                  src="/img/paodequeijo.jpg" 
+                  alt="Pão de Queijo"
+                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="w-full md:w-3/5 text-left md:text-right">
+                <span className="text-sm font-bold uppercase tracking-wider text-yellow-600 mb-2 block">Lanche Típico</span>
+                <h3 className="text-3xl font-bold mb-3 text-zinc-800">O Orgulho Mineiro</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">Pequenos pães assados feitos com muito queijo e polvilho. Possuem uma casca crocante e um interior macio e elástico. Perfeitos acompanhados de um café coado na hora.</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
