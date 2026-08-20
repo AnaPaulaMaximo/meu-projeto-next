@@ -105,9 +105,34 @@ export default function CulturaBrasileira() {
         </div>
       </section>
 
-      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-blue-700 mb-6">Um Povo que Celebra</h2>
-        <p className="text-lg text-gray-700 leading-relaxed mb-6">O Carnaval paralisa o país em fevereiro, enquanto em junho, o Brasil se veste de xadrez para as Festas Juninas, celebrando com fogueiras, quadrilhas e muita comida típica.</p>
+      {/* Seção de Festas */}
+      <section className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          
+          <div className="w-full lg:w-1/2">
+            <span className="text-blue-600 font-bold uppercase tracking-wider mb-2 block">Celebrações</span>
+            <h2 className="text-4xl font-extrabold text-zinc-900 mb-6">Um Povo que Celebra</h2>
+            <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+              <p>
+                A cultura brasileira é inseparável de sua alegria. O <strong>Carnaval</strong> é o espetáculo máximo, paralisando o país com desfiles grandiosos no Sudeste, bloquinhos de rua contagiantes e trios elétricos arrastando multidões no Nordeste.
+              </p>
+              <p>
+                No meio do ano, o país se transforma para as <strong>Festas Juninas</strong>. Fogueiras, bandeirinhas, dança de quadrilha e fartura de comidas à base de milho celebram o homem do campo, mostrando a verdadeira raiz do interior do Brasil.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full lg:w-1/2 relative">
+            {/* Decoração de fundo (sombra deslocada) */}
+            <div className="absolute inset-0 bg-blue-100 rounded-2xl transform translate-x-4 translate-y-4"></div>
+            <img 
+              src="/img/carnaval.webp" 
+              alt="Carnaval Brasileiro" 
+              className="relative z-10 rounded-2xl shadow-xl w-full h-[400px] object-cover"
+            />
+          </div>
+
+        </div>
       </section>
 
       {/* Footer */}
