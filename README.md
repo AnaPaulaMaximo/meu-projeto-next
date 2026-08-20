@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Descubra o Brasil - Landing Page
 
-## Getting Started
+Uma landing page moderna, responsiva e visualmente atraente dedicada a celebrar a riqueza da cultura brasileira. O projeto destaca nossos principais ritmos musicais, a gastronomia inconfundível e as festas populares que param o país.
 
-First, run the development server:
+## 💻 Sobre o Projeto
 
+Este projeto foi desenvolvido como um estudo de criação de interfaces modernas utilizando **Next.js** e **Tailwind CSS**. A página foi construída com foco em:
+- Tipografia limpa e legível.
+- Uso de imagens de alta qualidade (via Unsplash) para enriquecer o visual.
+- Efeitos de transição (hover) suaves que dão vida aos componentes.
+- Layout totalmente responsivo, adaptando-se perfeitamente a dispositivos móveis e desktops.
+
+## ✨ Funcionalidades
+
+- **Hero Section Impactante:** Background com sobreposição de gradiente e um CTA (Call to Action) atrativo.
+- **Cards de Ritmos:** Grid interativo com os principais ritmos brasileiros (Samba, Bossa Nova e Forró) com efeitos de elevação (`hover`).
+- **Seção de Gastronomia:** Layout intercalado (esquerda/direita) com imagens reais de pratos típicos (Feijoada e Pão de Queijo).
+- **Seção de Celebrações:** Layout de duas colunas destacando o Carnaval e as Festas Juninas, com decorações visuais e sombras deslocadas para um design mais "fora da caixa".
+- **Rodapé Profissional:** Footer elegante e minimalista.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **[Next.js](https://nextjs.org/)** (App Router) - Framework React para renderização e estruturação.
+- **[React](https://reactjs.org/)** - Biblioteca JavaScript para construção de interfaces.
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework de CSS utilitário para estilização rápida e responsiva.
+- **[Unsplash](https://unsplash.com/)** - Fonte das imagens de alta resolução utilizadas no projeto.
+
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/) (versão 18.x ou superior recomendada)
+
+### Rodando a aplicação
+
+1. Clone este repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [https://github.com/seu-usuario/cultura-brasileira-next.git](https://github.com/seu-usuario/cultura-brasileira-next.git)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Acesse a pasta do projeto no terminal:
+```bash
+cd cultura-brasileira-next
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Instale as dependências:
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Execute a aplicação em modo de desenvolvimento:
+```bash
+npm run dev
+```
 
-## Learn More
+5. O servidor iniciará localmente. Acesse no seu navegador:
+```text
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Estrutura de Arquivos Principal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A lógica visual e estrutural principal da página encontra-se centralizada no arquivo padrão do App Router:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+├── app/
+│   ├── globals.css      # Estilos globais e injeção do Tailwind
+│   ├── layout.tsx       # Estrutura base do HTML (head, fontes)
+│   └── page.tsx         # Todo o código e seções da Landing Page
+```
 
-## Deploy on Vercel
+## 📝 Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este projeto está sob a licença MIT. Sinta-se livre para usá-lo, modificá-lo e compartilhá-lo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Feito com ❤️ e Tailwind CSS.
